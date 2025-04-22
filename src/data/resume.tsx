@@ -87,7 +87,7 @@ export const DATA = {
         "PostgreSQL",
         "Solana",
         "Stripe",
-        "socket.io",
+        "Socket.io",
         "Prisma",
         "TailwindCSS",
         "Shadcn UI",
