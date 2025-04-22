@@ -75,6 +75,41 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "MAK3SPACE",
+      href: "https://mak3space.vercel.app/",
+      dates: "April 2025 - present",
+      active: true,
+      description:
+        "private spaces for couples & friends, mak3space makes it easy to stay accountable using solana and fiat",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Solana",
+        "Stripe",
+        "socket.io",
+        "Prisma",
+        "TailwindCSS",
+        "Shadcn UI",
+        "framer motion"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://mak3space.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/aayushk9/make-your-space",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/mak3space.png",
+      video:
+        "",
+    },
+    {
       title: "Batch0",
       href: "https://batch-0.vercel.app/",
       dates: "April 2025",
