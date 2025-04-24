@@ -2,233 +2,219 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Aayush Kokate",
-  initials: "A",
-  url: "https://dillion.io",
+  name: "Rohith Borana",
+  initials: "",
+  url: "https://therohithborana.vercel.app",
   location: "India",
   locationLink: "",
   description:
-    "21 year old nice guy",
-  summary: `long story short; full stack engineer, crypto guy.  
+    "20 | Building BandhuAI",
+  summary: `I build cool stuff to solve personal problems(atleast looks cool to me).
 
-  i like to code, read about startups, brew coffee and enjoy a good game of cricket.  
+  I like to produce music on weekends. \n
+  I find interest in Neuroscience and Psychology.
     
-  if you'd like to connect over a chat, say hello on [x.com](https://x.com/aayushk999) or book a meeting with me [here](https://cal.com/aayushdev/chat?Iuser=aayushdev&duration=5).`,
+  Ping me at [x.com](https://x.com/therohithborana) `,
         
-  avatarUrl: "/img.jpg",
+  avatarUrl: "/image.png",
   skills: [
     "Next.js",
     "React.js",
-    "Typescript",
     "Node.js",
     "Express",
-    "Postgres",
-    "Docker",
-    "Java"
+    "Docker"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+
   ],
   contact: {
-    email: "aayushk.dev@gmail.com",
+    email: "boranarohith07@gmail.com",
     tel: "",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/aayushk9",
+        url: "https://github.com/therohithborana",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/aayushcodes/",
+        url: "https://www.linkedin.com/in/rohith-borana-b10778266/",
         icon: Icons.linkedin,
 
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://x.com/aayushk999",
+        url: "https://x.com/therohithborana",
         icon: Icons.x,
 
         navbar: true,
       },
+      Youtube: {
+        name: "Youtube",
+        url: "https://www.youtube.com/@therohithborana/videos",
+        icon: Icons.youtube,
+        navbar: true,
+      },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:boranarohith07@gmail.com", // Updated to mailto link
         icon: Icons.email,
-
-        navbar: false,
-      },
+        navbar: true,
+      },      
     },
   },
   education: [
     {
-      school: "Pune University",
-      href: "https://www.linkedin.com/school/savitribai-phule-pune-university-sppu/",
-      degree: "Bachelors of Engineering (Electronics)",
-      logoUrl: "/unilogo.jpg",
-      start: "2021",
-      end: "2025",
+      school: "PES College Of Engineering",
+      href: "https://www.pesce.ac.in/",
+      degree: "Bachelors of Engineering (AIML)",
+      logoUrl: "/university.jpg",
+      start: "2022",
+      end: "2026",
     },
   ],
   projects: [
     {
-      title: "MAK3SPACE",
-      href: "https://mak3space.vercel.app/",
-      dates: "April 2025 - present",
+      title: "OneStep",
+      href: "https://onestep-azure.vercel.app/",
+      dates: "February 2025 - March 2025",
       active: true,
       description:
-        "private spaces for couples & friends, mak3space makes it easy to stay accountable using solana and fiat",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Solana",
-        "Stripe",
-        "Socket.io",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "framer motion"
-      ],
+        "A goal-tracking app that helps you stay consistent with daily progress, heatmap visuals, and detailed stats. Stay motivated and reach your goals!",
+        technologies: [
+          "Next.js",
+          "React",
+          "Tailwind CSS",
+          "MongoDB",
+          "Clerk"
+        ],        
       links: [
         {
           type: "Website",
-          href: "https://mak3space.vercel.app/",
+          href: "https://onestep-azure.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/aayushk9/make-your-space",
+          href: "https://github.com/therohithborana/onestep",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/mak3space.png",
+      image: "/onestep.png",
       video:
         "",
     },
     {
-      title: "Batch0",
-      href: "https://batch-0.vercel.app/",
+      title: "CypherNote",
+      href: "https://cyphernote.vercel.app",
       dates: "April 2025",
       active: true,
       description:
-        "Connect with early users for your startup, easiest way to collect and manage beta user requests for your startup",
+        "CypherNote is a platform that allows users to take secure and encrypted notes. It ensures privacy by encrypting content, making it accessible only to the user.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI"
+        "JavaScript",
+        "Vite JS"
       ],
       links: [
         {
           type: "Website",
-          href: "https://batch-0.vercel.app/",
+          href: "https://cyphernote.vercel.app",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/aayushk9/zerobatch",
+          href: "https://github.com/therohithborana/cyphernote",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/batch0.png",
-      video:
-        "",
-    },
-    {
-      title: "Wordbook",
-      href: "https://wordbook-one.vercel.app/",
-      dates: "April 2025",
-      active: true,
-      description:
-        "Learn a new word every day with context, examples and usecase. Build your vocabulary effortlessly with WordBook.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI"
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://wordbook-one.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/aayushk9/wordbook",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/wordbook.png",
+      image: "/cyphernote.png",
       video: "",
     },
+
     {
-      title: "Human Kind",
-      href: "https://humankind-space.vercel.app/",
-      dates: "April 2025",
-      active: true,
-      description:
-        "Human connection has features such as dailylogs, gratitude, knowledge and zen",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI"
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://humankind-space.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/aayushk9/humankind",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/kind.png",
-      video: "",
+  title: "File.Jalebi",
+  href: "https://filejalebi.vercel.app",
+  dates: "April 2025",
+  active: true,
+  description:
+    "Jalebi-Fafda is a peer-to-peer file sharing application that operates without the need for a central server. Leveraging WebRTC technology, it enables users to share files directly between browsers, ensuring efficient and secure transfers.",
+  technologies: [
+    "Next.js",
+    "WebRTC",
+    "Peer-to-Peer File sharing"
+  ],
+  links: [
+    {
+      type: "Website",
+      href: "https://filejalebi.vercel.app",
+      icon: <Icons.globe className="size-3" />,
     },
     {
-      title: "BigBrain",
-      href: "https://bigbrain-bb.vercel.app/",
-      dates: "March 2025",
-      active: true,
-      description:
-        "BigBrain helps you find research papers, crypto whitepapers and the latest news on crypto and startups.",
-      technologies: [
-        "React.js",
-        "Express",
-        "MongoDB",
-        "Node.js",
-        "TailwindCSS",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://bigbrain-bb.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/aayushk9/BigBrain",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/bigb.png",
-      video:
-        "",
+      type: "Source",
+      href: "https://github.com/therohithborana/jalebi_webrtc",
+      icon: <Icons.github className="size-3" />,
     },
+  ],
+  image: "/filejalebi.png",
+  video: "",
+},
+
+{
+  title: "RagaChat",
+  href: "https://ragachat.vercel.app",
+  dates: "April 2025",
+  active: true,
+  description:
+    "RagaChat is a real-time chat app with a musical twist! Connect with fellow music lovers, share your favorite tunes, and discuss everything from classical ragas to modern beats on public forums. Built with Next.js, it features Clerk authentication and real-time messaging powered by GetStream.io.",
+  technologies: [
+    "Next.js",
+    "ClerkAuth",
+    "GetStream.io",
+    "Vercel"
+  ],
+  links: [
+    {
+      type: "Website",
+      href: "https://ragachat.vercel.app",
+      icon: <Icons.globe className="size-3" />,
+    },
+    {
+      type: "Source",
+      href: "https://github.com/therohithborana/ragachat",
+      icon: <Icons.github className="size-3" />,
+    },
+  ],
+  image: "/ragachat.png",
+  video: "",
+},
+
+{
+  title: "SOM-Image-Clustering-Analysis",
+  href: "https://github.com/therohithborana/SOM-Image-Clustering-Analysis",
+  dates: "Last Month",
+  active: true,
+  description:
+    "This project applies Self-Organizing Maps (SOM) to cluster colors in an image. It explores unsupervised learning and demonstrates how SOM can be used to categorize pixels based on color similarity.",
+  technologies: [
+    "Self-Organizing Maps (SOM)",
+    "Unsupervised Learning",
+    "Image Processing"
+  ],
+  links: [
+    {
+      type: "Source",
+      href: "https://github.com/therohithborana/SOM-Image-Clustering-Analysis",
+      icon: <Icons.github className="size-3" />,
+    },
+  ],
+  image: "/som-image-clustering.png",
+  video: "",
+}
+,
   ],
 } as const;

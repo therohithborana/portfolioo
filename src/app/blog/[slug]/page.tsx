@@ -2,7 +2,7 @@ import { getBlogPosts, getPost } from "@/data/blog";
 import { DATA } from "@/data/resume";
 import { formatDate } from "@/lib/utils";
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
 
 export async function generateStaticParams() {
@@ -19,34 +19,65 @@ export async function generateMetadata({
 }): Promise<Metadata | undefined> {
   let post = await getPost(params.slug);
 
-  let {
-    title,
-    publishedAt: publishedTime,
-    summary: description,
-    image,
-  } = post.metadata;
-  let ogImage = image ? `${DATA.url}${image}` : `${DATA.url}/og?title=${title}`;
+  // Check if it's an external blog post (Medium)
+  if (post.metadata.external) {
+    return {
+      title: post.metadata.title,
+      description: post.metadata.summary,
+      openGraph: {
+        title: post.metadata.title,
+        description: post.metadata.summary,
+        type: "article",
+        publishedTime: post.metadata.publishedAt,
+        url: post.metadata.external,
+        images: [
+          {
+            url: post.metadata.image
+              ? `${DATA.url}${post.metadata.image}`
+              : `${DATA.url}/og?title=${post.metadata.title}`,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: post.metadata.title,
+        description: post.metadata.summary,
+        images: [
+          post.metadata.image
+            ? `${DATA.url}${post.metadata.image}`
+            : `${DATA.url}/og?title=${post.metadata.title}`,
+        ],
+      },
+    };
+  }
 
+  // For local posts, return the existing metadata
   return {
-    title,
-    description,
+    title: post.metadata.title,
+    description: post.metadata.summary,
     openGraph: {
-      title,
-      description,
+      title: post.metadata.title,
+      description: post.metadata.summary,
       type: "article",
-      publishedTime,
+      publishedTime: post.metadata.publishedAt,
       url: `${DATA.url}/blog/${post.slug}`,
       images: [
         {
-          url: ogImage,
+          url: post.metadata.image
+            ? `${DATA.url}${post.metadata.image}`
+            : `${DATA.url}/og?title=${post.metadata.title}`,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title,
-      description,
-      images: [ogImage],
+      title: post.metadata.title,
+      description: post.metadata.summary,
+      images: [
+        post.metadata.image
+          ? `${DATA.url}${post.metadata.image}`
+          : `${DATA.url}/og?title=${post.metadata.title}`,
+      ],
     },
   };
 }
@@ -60,6 +91,12 @@ export default async function Blog({
 }) {
   let post = await getPost(params.slug);
 
+  // If it's an external Medium blog, redirect to it
+  if (post.metadata.external) {
+    redirect(post.metadata.external);
+  }
+
+  // If it's not found, show 404
   if (!post) {
     notFound();
   }
