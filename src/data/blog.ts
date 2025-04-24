@@ -65,23 +65,23 @@ async function getAllPosts(dir: string) {
   );
 }
 
-// export async function getBlogPosts() {
-//   return getAllPosts(path.join(process.cwd(), "content"));
-// }
 export async function getBlogPosts() {
-  const localPosts = await getAllPosts(path.join(process.cwd(), "content"));
-
-  const mediumPost = {
-    metadata: {
-      title: "12 Roles You Can Play in a Group Discussion and How to Use Them Right",
-      publishedAt: "2025-04-07",
-      summary: "Understand the 12 key roles in a group discussion to stand out and succeed.",
-      image: "", // optional image URL
-      external: "https://medium.com/@boranarohith07/12-roles-you-can-play-in-a-group-discussion-and-how-to-use-them-right-eb1de465e5b8",
-    },
-    slug: "medium-post",
-    source: "", // not used
-  };
-
-  return [mediumPost, ...localPosts];
+  return getAllPosts(path.join(process.cwd(), "content"));
 }
+// export async function getBlogPosts() {
+//   const localPosts = await getAllPosts(path.join(process.cwd(), "content"));
+
+//   const mediumPost = {
+//     metadata: {
+//       title: "12 Roles You Can Play in a Group Discussion and How to Use Them Right",
+//       publishedAt: "2025-04-07",
+//       summary: "Understand the 12 key roles in a group discussion to stand out and succeed.",
+//       image: "", // optional image URL
+//       external: "https://medium.com/@boranarohith07/12-roles-you-can-play-in-a-group-discussion-and-how-to-use-them-right-eb1de465e5b8",
+//     },
+//     slug: "medium-post",
+//     source: "", // not used
+//   };
+
+//   return [mediumPost, ...localPosts];
+// }
