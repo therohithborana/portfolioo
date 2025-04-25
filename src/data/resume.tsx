@@ -8,7 +8,7 @@ export const DATA = {
   location: "India",
   locationLink: "",
   description:
-    "20 | Building BandhuAI",
+    "20 • Building PalAI",
   summary: `I build cool stuff to solve personal problems(atleast looks cool to me).
 
   I like to produce music on weekends. \n
