@@ -14,7 +14,7 @@ export const DATA = {
   I like to produce music on weekends. \n
   I find interest in Neuroscience and Psychology.
     
-  Ping me at [x.com](https://x.com/therohithborana) `,
+  Ping me [here](mailto:boranarohith07@gmail.com) `,
         
   avatarUrl: "/image.png",
   skills: [
@@ -64,7 +64,7 @@ export const DATA = {
         name: "Send Email",
         url: "mailto:boranarohith07@gmail.com", // Updated to mailto link
         icon: Icons.email,
-        navbar: true,
+        navbar: false,
       },      
     },
   },
@@ -82,7 +82,7 @@ export const DATA = {
     {
       title: "OneStep",
       href: "https://onestep-azure.vercel.app/",
-      dates: "February 2025 - March 2025",
+      dates: "March 2025",
       active: true,
       description:
         "A goal-tracking app that helps you stay consistent with daily progress, heatmap visuals, and detailed stats. Stay motivated and reach your goals!",
@@ -112,7 +112,7 @@ export const DATA = {
     {
       title: "CypherNote",
       href: "https://cyphernote.vercel.app",
-      dates: "April 2025",
+      dates: "March 2025",
       active: true,
       description:
         "CypherNote is a platform that allows users to take secure and encrypted notes. It ensures privacy by encrypting content, making it accessible only to the user.",
@@ -139,7 +139,7 @@ export const DATA = {
     {
   title: "File.Jalebi",
   href: "https://filejalebi.vercel.app",
-  dates: "April 2025",
+  dates: "March 2025",
   active: true,
   description:
     "Jalebi-Fafda is a peer-to-peer file sharing application that operates without the need for a central server. Leveraging WebRTC technology, it enables users to share files directly between browsers, ensuring efficient and secure transfers.",
@@ -167,7 +167,7 @@ export const DATA = {
 {
   title: "RagaChat",
   href: "https://ragachat.vercel.app",
-  dates: "April 2025",
+  dates: "January 2025",
   active: true,
   description:
     "RagaChat is a real-time chat app with a musical twist! Connect with fellow music lovers, share your favorite tunes, and discuss everything from classical ragas to modern beats on public forums. Built with Next.js, it features Clerk authentication and real-time messaging powered by GetStream.io.",
@@ -196,7 +196,7 @@ export const DATA = {
 {
   title: "SOM-Image-Clustering-Analysis",
   href: "https://github.com/therohithborana/SOM-Image-Clustering-Analysis",
-  dates: "Last Month",
+  dates: "March 2025",
   active: true,
   description:
     "This project applies Self-Organizing Maps (SOM) to cluster colors in an image. It explores unsupervised learning and demonstrates how SOM can be used to categorize pixels based on color similarity.",
