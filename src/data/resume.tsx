@@ -8,11 +8,12 @@ export const DATA = {
   location: "India",
   locationLink: "",
   description:
-    "20 • Building SakhiAI",
+    "21 • Building SakhiAI",
   summary: `I build cool stuff to solve personal problems(atleast looks cool to me).
 
-  I like to produce music on weekends. \n
-  I find interest in Neuroscience and Psychology.
+
+  I find interest in Neuroscience and Psychology. \n
+  Weekend Beatboxer and Music producer.
     
   Ping me [here](mailto:boranarohith07@gmail.com) `,
         
@@ -79,6 +80,30 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "SakhiAI",
+      href: "https://sakhiai.vercel.app",
+      dates: "April 2025",
+      active: true,
+      description:
+        "SakhiAI is your thoughtful AI companion that engages you in natural, voice-based conversations to help you reflect on your day. It remembers past interactions, adapts to your routine, and offers empathetic check-ins with a human-like voice. Coming Soon!",
+      technologies: [
+        "Next.js",
+        "Vercel",
+        "ElevenLabs",
+        "Google Gemini"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://sakhiai.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        }
+      ],
+      image: "/sakhiai.png",
+      video: "",
+    },
+
     {
       title: "OneStep",
       href: "https://onestep-azure.vercel.app/",
