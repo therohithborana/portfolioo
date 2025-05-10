@@ -9,11 +9,10 @@ export const DATA = {
   locationLink: "",
   description:
     "21 • Building SakhiAI",
-  summary: `I build cool stuff to solve personal problems(atleast looks cool to me).
+  summary: `Building cool things to solve uncool problems
 
+  I also find interest in Neuroscience and Psychology. \n
 
-  I find interest in Neuroscience and Psychology. \n
-  Weekend Beatboxer and Music producer.
     
   Ping me [here](mailto:boranarohith07@gmail.com) `,
         
