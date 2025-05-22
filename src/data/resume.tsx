@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: "",
   description:
     "21 • Building SakhiAI",
-  summary: `Building cool things to solve uncool problems
+  summary: `Solving problems with code and building cool things to make life easier
 
   I also find interest in Neuroscience and Psychology. \n
 
