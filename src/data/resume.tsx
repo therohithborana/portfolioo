@@ -16,7 +16,7 @@ export const DATA = {
     
   Ping me [here](mailto:boranarohith07@gmail.com) `,
         
-  avatarUrl: "/image.png",
+  avatarUrl: "/me.jpg",
   skills: [
     "Next.js",
     "React.js",
