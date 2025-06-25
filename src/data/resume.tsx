@@ -8,8 +8,8 @@ export const DATA = {
   location: "India",
   locationLink: "",
   description:
-    "21 • Building SakhiAI",
-  summary: `Solving problems with code and building cool things to make life easier
+    "21 • engineer • polymath",
+  summary: `Hacking around and building cool things to make life easier.
 
   I also find interest in Neuroscience and Psychology. \n
 
@@ -79,29 +79,29 @@ export const DATA = {
     },
   ],
   projects: [
-    {
-      title: "SakhiAI",
-      href: "https://sakhiai.vercel.app",
-      dates: "April 2025",
-      active: true,
-      description:
-        "SakhiAI is your thoughtful AI companion that engages you in natural, voice-based conversations to help you reflect on your day. It remembers past interactions, adapts to your routine, and offers empathetic check-ins with a human-like voice. Coming Soon!",
-      technologies: [
-        "Next.js",
-        "Vercel",
-        "ElevenLabs",
-        "Google Gemini"
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://sakhiai.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        }
-      ],
-      image: "/sakhiai.png",
-      video: "",
-    },
+    // {
+    //   title: "SakhiAI",
+    //   href: "https://sakhiai.vercel.app",
+    //   dates: "April 2025",
+    //   active: true,
+    //   description:
+    //     "SakhiAI is your thoughtful AI companion that engages you in natural, voice-based conversations to help you reflect on your day. It remembers past interactions, adapts to your routine, and offers empathetic check-ins with a human-like voice. Coming Soon!",
+    //   technologies: [
+    //     "Next.js",
+    //     "Vercel",
+    //     "ElevenLabs",
+    //     "Google Gemini"
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://sakhiai.vercel.app",
+    //       icon: <Icons.globe className="size-3" />,
+    //     }
+    //   ],
+    //   image: "/sakhiai.png",
+    //   video: "",
+    // },
 
     {
       title: "OneStep",
