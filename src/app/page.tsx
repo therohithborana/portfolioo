@@ -114,6 +114,29 @@ export default function Page() {
         </div>
       </section>
 
+      <section id="other-projects">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <h2 className="text-xl font-bold">Other Fun Projects</h2>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+            <div className="flex flex-wrap gap-4">
+              {DATA.otherProjects.map((project, id) => (
+                <Link
+                  key={project.name}
+                  href={project.href}
+                  target="_blank"
+                  className="text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4"
+                >
+                  {project.name}
+                  {id < DATA.otherProjects.length - 1 && ","}
+                </Link>
+              ))}
+            </div>
+          </BlurFade>
+        </div>
+      </section>
+
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>

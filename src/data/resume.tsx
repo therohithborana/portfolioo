@@ -79,30 +79,6 @@ export const DATA = {
     },
   ],
   projects: [
-    // {
-    //   title: "SakhiAI",
-    //   href: "https://sakhiai.vercel.app",
-    //   dates: "April 2025",
-    //   active: true,
-    //   description:
-    //     "SakhiAI is your thoughtful AI companion that engages you in natural, voice-based conversations to help you reflect on your day. It remembers past interactions, adapts to your routine, and offers empathetic check-ins with a human-like voice. Coming Soon!",
-    //   technologies: [
-    //     "Next.js",
-    //     "Vercel",
-    //     "ElevenLabs",
-    //     "Google Gemini"
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://sakhiai.vercel.app",
-    //       icon: <Icons.globe className="size-3" />,
-    //     }
-    //   ],
-    //   image: "/sakhiai.png",
-    //   video: "",
-    // },
-
     {
       title: "OneStep",
       href: "https://onestep-azure.vercel.app/",
@@ -133,33 +109,6 @@ export const DATA = {
       video:
         "",
     },
-    {
-      title: "CypherNote",
-      href: "https://cyphernote.vercel.app",
-      dates: "March 2025",
-      active: true,
-      description:
-        "CypherNote is a platform that allows users to take secure and encrypted notes. It ensures privacy by encrypting content, making it accessible only to the user.",
-      technologies: [
-        "JavaScript",
-        "Vite JS"
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://cyphernote.vercel.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/therohithborana/cyphernote",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/cyphernote.png",
-      video: "",
-    },
-
     {
   title: "File.Jalebi",
   href: "https://filejalebi.vercel.app",
@@ -239,6 +188,23 @@ export const DATA = {
   image: "/som-image-clustering.png",
   video: "",
 }
-,
+  ],
+  otherProjects: [
+    {
+      name: "Sakhi AI",
+      href: "https://sakhiai.vercel.app"
+    },
+    {
+      name: "CypherNote", 
+      href: "https://cyphernote.vercel.app"
+    },
+    {
+      name: "UnMedium",
+      href: "https://github.com/therohithborana/UnMedium"
+    },
+    {
+      name: "More on GitHub",
+      href: "https://github.com/therohithborana"
+    }
   ],
 } as const;
