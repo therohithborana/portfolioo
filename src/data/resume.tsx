@@ -22,7 +22,14 @@ export const DATA = {
     "React.js",
     "Node.js",
     "Express",
-    "Docker"
+    "JavaScript",
+    "Tailwind CSS",
+    "MongoDB",
+    "WebRTC",
+    "Docker",
+    "Python",
+    "AI/ML",
+    
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -80,6 +87,57 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Ticket AI",
+      href: "https://github.com/therohithborana/agentic_ticket_management",
+      dates: "March 2025",
+      active: true,
+      description:
+        "An AI-powered ticket management system that automatically categorizes, prioritizes, and assigns support tickets to the most appropriate moderators. Features smart skill-based routing, AI-generated notes, and automated email notifications.",
+      technologies: [
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Google Gemini API",
+        "Inngest",
+        "JWT Authentication",
+        "Nodemailer"
+      ],        
+      links: [
+        
+        {
+          type: "Source",
+          href: "https://github.com/therohithborana/agentic_ticket_management",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/ticketai.png",
+      video: "",
+    },
+    {
+      title: "Chronolog",
+      href: "https://chronolog-beryl.vercel.app",
+      dates: "March 2025",
+      active: true,
+      description:
+        "Track your day by entering what you are doing as logs with time stamps and get an AI analysis at EOD. A productivity tool that helps you understand your daily patterns and optimize your time management.",
+      technologies: [
+        "Next.js",
+        "React",
+        "AI Analysis",
+        "Time Tracking",
+        "Productivity Tools"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://chronolog-beryl.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/chronolog.png",
+      video: "",
+    },
+    {
       title: "OneStep",
       href: "https://onestep-azure.vercel.app/",
       dates: "March 2025",
@@ -105,66 +163,36 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/onestep.png",
-      video:
-        "",
+            image: "/onestep.png",
+      video: "",
     },
     {
-  title: "File.Jalebi",
-  href: "https://filejalebi.vercel.app",
-  dates: "March 2025",
-  active: true,
-  description:
-    "Jalebi-Fafda is a peer-to-peer file sharing application that operates without the need for a central server. Leveraging WebRTC technology, it enables users to share files directly between browsers, ensuring efficient and secure transfers.",
-  technologies: [
-    "Next.js",
-    "WebRTC",
-    "Peer-to-Peer File sharing"
-  ],
-  links: [
-    {
-      type: "Website",
+      title: "File.Jalebi",
       href: "https://filejalebi.vercel.app",
-      icon: <Icons.globe className="size-3" />,
+      dates: "March 2025",
+      active: true,
+      description:
+        "Jalebi-Fafda is a peer-to-peer file sharing application that operates without the need for a central server. Leveraging WebRTC technology, it enables users to share files directly between browsers, ensuring efficient and secure transfers.",
+      technologies: [
+        "Next.js",
+        "WebRTC",
+        "Peer-to-Peer File sharing"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://filejalebi.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/therohithborana/jalebi_webrtc",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/filejalebi.png",
+      video: "",
     },
-    {
-      type: "Source",
-      href: "https://github.com/therohithborana/jalebi_webrtc",
-      icon: <Icons.github className="size-3" />,
-    },
-  ],
-  image: "/filejalebi.png",
-  video: "",
-},
-
-{
-  title: "RagaChat",
-  href: "https://ragachat.vercel.app",
-  dates: "January 2025",
-  active: true,
-  description:
-    "RagaChat is a real-time chat app with a musical twist! Connect with fellow music lovers, share your favorite tunes, and discuss everything from classical ragas to modern beats on public forums. Built with Next.js, it features Clerk authentication and real-time messaging powered by GetStream.io.",
-  technologies: [
-    "Next.js",
-    "ClerkAuth",
-    "GetStream.io",
-    "Vercel"
-  ],
-  links: [
-    {
-      type: "Website",
-      href: "https://ragachat.vercel.app",
-      icon: <Icons.globe className="size-3" />,
-    },
-    {
-      type: "Source",
-      href: "https://github.com/therohithborana/ragachat",
-      icon: <Icons.github className="size-3" />,
-    },
-  ],
-  image: "/ragachat.png",
-  video: "",
-},
 
 {
   title: "SOM-Image-Clustering-Analysis",
@@ -184,15 +212,15 @@ export const DATA = {
       href: "https://github.com/therohithborana/SOM-Image-Clustering-Analysis",
       icon: <Icons.github className="size-3" />,
     },
-  ],
-  image: "/som-image-clustering.png",
-  video: "",
-}
+        ],
+      image: "/som-image-clustering.png",
+      video: "",
+    }
   ],
   otherProjects: [
     {
-      name: "Sakhi AI",
-      href: "https://sakhiai.vercel.app"
+      name: "RagaChat",
+      href: "https://ragachat.vercel.app"
     },
     {
       name: "CypherNote", 
