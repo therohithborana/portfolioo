@@ -85,6 +85,16 @@ export const DATA = {
       end: "2026",
     },
   ],
+  experience: [
+    {
+      company: "Anarix",
+      href: "",
+      role: "Gen AI Intern",
+      logoUrl: "/anarix.jfif", // placeholder logo path
+      start: "Aug 2025",
+      end: "Present",
+    },
+  ],
   projects: [
     {
       title: "Ticket AI",
