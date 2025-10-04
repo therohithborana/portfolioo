@@ -11,25 +11,19 @@ export const DATA = {
     "21 • engineer • polymath",
   summary: `Hacking around and building cool things to make life easier.
 
-  I also find interest in Neuroscience and Psychology. \n
+  Everything AI and Neuroscience \n
 
     
   Ping me [here](mailto:boranarohith07@gmail.com) `,
         
   avatarUrl: "/me.jpg",
   skills: [
-    "Next.js",
-    "React.js",
-    "Node.js",
-    "Express",
-    "JavaScript",
-    "Tailwind CSS",
-    "MongoDB",
-    "WebRTC",
-    "Docker",
-    "Python",
-    "AI/ML",
-    
+   "AI/ML",
+"Agentic AI",
+"MCP Servers",
+"Docker",
+"Next.js",
+"MongoDB"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
