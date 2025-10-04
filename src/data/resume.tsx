@@ -9,11 +9,8 @@ export const DATA = {
   locationLink: "",
   description:
     "21 • engineer • polymath",
-  summary: `Hacking around and building cool things to make life easier.
+  summary: `Breaking Prod.\n
 
-  Everything AI and Neuroscience \n
-
-    
   Ping me [here](mailto:boranarohith07@gmail.com) `,
         
   avatarUrl: "/me.jpg",
