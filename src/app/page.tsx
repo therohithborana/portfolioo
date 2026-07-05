@@ -63,8 +63,7 @@ export default function Page() {
                 logoUrl={exp.logoUrl}
                 altText={exp.company}
                 title={exp.company}
-                subtitle={exp.role}
-                period={`${exp.start} - ${exp.end}`}
+                roles={exp.roles}
               />
             </BlurFade>
           ))}

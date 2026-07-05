@@ -8,7 +8,7 @@ export const DATA = {
   location: "India",
   locationLink: "",
   description:
-    "21 • engineer • polymath",
+    "22 • engineer • polymath",
   summary: `Breaking Prod.\n
 
   Ping me [here](mailto:boranarohith07@gmail.com) `,
@@ -80,10 +80,11 @@ export const DATA = {
     {
       company: "Anarix",
       href: "",
-      role: "Gen AI Intern",
-      logoUrl: "/anarix.jfif", // placeholder logo path
-      start: "Aug 2025",
-      end: "Present",
+      logoUrl: "/anarix.jfif",
+      roles: [
+        { title: "Applied AI Engineer", start: "July 2026", end: "Present" },
+        { title: "Gen AI Intern", start: "Aug 2025", end: "June 2026" },
+      ],
     },
   ],
   projects: [

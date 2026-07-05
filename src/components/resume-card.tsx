@@ -9,14 +9,21 @@ import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
+interface Role {
+  title: string;
+  start: string;
+  end: string;
+}
+
 interface ResumeCardProps {
   logoUrl: string;
   altText: string;
   title: string;
   subtitle?: string;
+  roles?: readonly Role[];
   href?: string;
   badges?: readonly string[];
-  period: string;
+  period?: string;
   description?: string;
 }
 export const ResumeCard = ({
@@ -24,6 +31,7 @@ export const ResumeCard = ({
   altText,
   title,
   subtitle,
+  roles,
   href,
   badges,
   period,
@@ -84,7 +92,20 @@ export const ResumeCard = ({
                 {period}
               </div>
             </div>
-            {subtitle && <div className="font-sans text-xs">{subtitle}</div>}
+            {roles ? (
+              <div className="font-sans text-xs space-y-1 mt-1">
+                {roles.map((role) => (
+                  <div key={role.title} className="flex items-center justify-between">
+                    <span>{role.title}</span>
+                    <span className="text-muted-foreground tabular-nums">
+                      {role.start} - {role.end}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              subtitle && <div className="font-sans text-xs">{subtitle}</div>
+            )}
           </CardHeader>
           {description && (
             <motion.div
