@@ -7,7 +7,6 @@ import { GitHubHeatmap } from "../components/github-heatmap";
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
 import { Badge } from "../components/ui/badge";
 import { DATA } from "../data/resume";
-import Link from "next/link";
 import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -120,39 +119,13 @@ export default function Page() {
                   href={project.href}
                   key={project.title}
                   title={project.title}
-                  description={project.description}
                   dates={project.dates}
                   tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
                   links={project.links}
                 />
               </BlurFade>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section id="other-projects">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 13}>
-            <h2 className="text-xl font-bold">Other Fun Projects</h2>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <div className="flex flex-wrap gap-4">
-              {DATA.otherProjects.map((project, id) => (
-                <Link
-                  key={project.name}
-                  href={project.href}
-                  target="_blank"
-                  className="text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4"
-                >
-                  {project.name}
-                  {id < DATA.otherProjects.length - 1 && ","}
-                </Link>
-              ))}
-            </div>
-          </BlurFade>
         </div>
       </section>
 
