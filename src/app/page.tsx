@@ -3,9 +3,7 @@ import BlurFade from "../components/magicui/blur-fade";
 import BlurFadeText from "../components/magicui/blur-fade-text";
 import { ProjectCard } from "../components/project-card";
 import { ResumeCard } from "../components/resume-card";
-import { GitHubHeatmap } from "../components/github-heatmap";
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
-import { Badge } from "../components/ui/badge";
 import { DATA } from "../data/resume";
 import Markdown from "react-markdown";
 
@@ -100,9 +98,6 @@ export default function Page() {
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                   My Projects
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
-                </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                  I build cool things, here are some of my favorites.
                 </p>
@@ -129,28 +124,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="github-activity">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <GitHubHeatmap />
-          </BlurFade>
-        </div>
-      </section>
 
-      <section id="skills">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 10}>
-            <h2 className="text-xl font-bold">Skills</h2>
-          </BlurFade>
-          <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 11 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
-              </BlurFade>
-            ))}
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
