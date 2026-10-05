@@ -1,0 +1,168 @@
+---
+title: I stopped finishing things (on purpose)
+publishedAt: "2026-10-05"
+summary: On a half-read book, sunk costs, and learning when to quit.
+---
+
+I bought a book a few months ago. A really popular self-help one. The kind everyone has on their shelf (or at least in their cart).
+
+I read half of it. And then I just… stopped.
+
+Nothing dramatic happened. I didn’t hate it. I just didn’t feel like picking it up anymore. It sat on my table for weeks, looking at me. (Judging me, honestly :’) )
+
+And the guilt showed up right on time.
+
+*I paid for this.*\
+*Maybe the real value is in the second half?*\
+*I’ve already finished half, it’d be a waste to stop now.*
+
+So I kept it on the table. Not reading it. Not giving it away. Just feeling bad about it every few days.
+
+Then it hit me that I wasn’t guilty about the book. I was guilty about the money and the hours I’d already put in. Which, funnily enough, I can’t get back whether I finish it or not :)
+
+---
+
+## So that’s a thing, apparently
+
+It’s called the **sunk cost fallacy**. I’m sure you’ve heard of it, but here’s the simple version:
+
+You’ve already spent something (money, time, effort) and you can’t get it back. And then you let that past spending decide what you do next.
+
+That’s it. That’s the whole fallacy.
+
+“I’ve come this far” is probably the most dangerous sentence in the English language. (Maybe a bit dramatic, but I stand by it.)
+
+The thing I’ve started doing is a small test. I call it the zero-base test:
+
+**“If I were starting today with zero history, would I choose this?”**
+
+No book bought. No pages read. Just me, today, with a free evening. Would I pick up this book?
+
+For me, the answer was no. Not this one, not right now.
+
+![Past cost vs future value](/sunk-cost-equation.jpg)
+
+*Past cost vs future value: only one of these should be in the decision*
+
+---
+
+## It’s everywhere, and it’s a lot heavier than a book
+
+A book is a cheap example. Let’s go to the expensive ones.
+
+Think about how many people in India finish a degree they don’t like. Not because they want to. Because they’ve already done two years of it. Because the fees are paid. Because relatives are asking. Because the family stretched money that wasn’t really there to begin with.
+
+“Just finish it, then see.”
+
+I get it. I really do. When money is tight, wasting it feels like a sin. And walking away feels like saying all that sacrifice was for nothing.
+
+But I think the sacrifice has already happened. The only question is whether to add more years on top of it.
+
+Then there’s UPSC. I want to be careful here, because this one is close to a lot of people I know.
+
+Some people spend five, six years preparing. Attempt after attempt. No plan B, because a plan B feels like admitting you don’t believe in plan A. And meanwhile the parents are getting older and the savings are quietly running out.
+
+I don’t think these people are foolish. Not even a little bit. The dedication is something I can’t even imagine. And “just quit” is the most useless advice anyone can give them.
+
+But I do think the hardest part is that every extra year makes quitting feel more expensive. Six years in, leaving doesn’t feel like a choice anymore. It feels like losing everything at once.
+
+And that’s exactly how the trap works. The past keeps getting heavier, so the future keeps getting smaller.
+
+Maybe the question isn’t “should I quit?” Maybe it’s a gentler one: *“If I were 22 again, knowing what I know now, would I start this?”* And if the answer is yes, great, that’s a real reason to go on. If it’s no, then at least you know you’re staying for the wrong reason.
+
+---
+
+## The engineer in me can’t stop thinking about this
+
+Okay, this is where the nerd in me comes out. (Sorry :) )
+
+When I think about decisions as an engineer, sunk cost looks like a **bug in the objective function**.
+
+Here’s what I mean. A good decision should only depend on what happens from now on. Future cost, future value. The past is a constant. And constants cancel out when you compare two options.
+
+If option A costs you 100 hours already spent + 10 more, and option B is starting fresh at 15, those 100 hours are in both sides of the comparison, whichever way you go. They’re gone either way. So they shouldn’t decide anything.
+
+But our brain adds them to the equation anyway. That’s the bug.
+
+I’ve seen this in my own work so many times:
+
+**Debugging rabbit holes.** Three hours into a bug, and I’m convinced the next fix will be the one. Because *I’ve already spent three hours on this.* Meanwhile, a fresh pair of eyes (or a fresh coffee) would’ve found it in ten minutes by trying a completely different direction.
+
+**Rewrite vs refactor.** “We’ve built so much of this, we can’t throw it away.” Sometimes true! But the real question is: *what’s cheaper from here, fixing this or building new?* The code you already wrote isn’t an asset just because it took effort. It’s only an asset if it’s useful going forward.
+
+**Early stopping in ML.** This one is my favourite. When you train a model, there’s a point where it stops improving on validation data. It gets better on the training set and worse in real life. Gradient descent doesn’t care how many steps it has already taken. It doesn’t feel bad about the 500 epochs. We literally build a rule into training that says *stop when it stops helping.* And nobody calls that giving up. We call it good engineering.
+
+![Quit or continue flowchart](/sunk-cost-decision-flow.jpg)
+
+*Ignore what you’ve spent. Ask only: is the next hour worth more than the best alternative?*
+
+I think we’d be a lot happier if we treated our own lives with the same logic we treat our training loops.
+
+---
+
+## But wait, not everything should be quit
+
+Okay. This is the part I really want to say clearly, because I don’t want you to read this and go “cool, Rohith says quit everything”.
+
+No. Please don’t.
+
+Persistence is real. Some of the best things I’ve ever done felt terrible in the middle. Learning anything hard has a stretch where you feel stupid and slow and nothing is clicking. That’s not a sign to stop. That’s just the thing being hard.
+
+So how do you tell a **dip** from a **dead end**?
+
+I don’t have a perfect answer (I’m 22, haha). But here’s what I’ve been thinking:
+
+A dip is when you’re struggling but still learning. You can point at something and say “I couldn’t do this a month ago, and now I can.” The pain has a direction.
+
+A dead end is when you’re struggling and nothing is changing. Same problems, same frustration, no new skill, no new information. Just time passing.
+
+And one more thing, because it matters. **Switching costs are real.** Leaving something and starting something new costs you time, energy and momentum. But those are *future* costs, so they belong in the equation. That’s very different from sunk cost, which is the past.
+
+So “I’ve already spent 6 months on this” is sunk cost. Not a reason.\
+“Restarting will cost me 3 months of learning a new tool” is a switching cost. Totally a reason.
+
+Hard to tell them apart in the moment, but the trick is just asking which one it is. Is this about the past, or about what’s ahead?
+
+---
+
+## What I’m trying to do about it
+
+I’ve started a small toolkit. Nothing fancy.
+
+**1. The zero-base test.** Same one from before. “Starting from scratch today, would I choose this?” If the honest answer is no, that’s a signal.
+
+**2. Kill criteria, decided before I start.** This is my favourite. Before beginning something, I write down what would make me stop. “If I’m not enjoying this by chapter 5, I’m done.” “If this project doesn’t have users after 3 months, I move on.” Because *future me*, deep in the project, is a terrible judge. He’s emotionally invested and will argue for staying.
+
+**3. Time-boxing.** Give it a fixed window. Two hours on this bug. Two weeks on this idea. When the time’s up, I check in with myself honestly, then decide whether to extend. Extending is allowed! But it has to be a decision, not a drift.
+
+**4. Ask a friend with no stake.** Someone who didn’t spend the money or the time. They’ll usually say the obvious thing in about five seconds. (And it’s annoying how often they’re right.)
+
+![The toolkit, hand-drawn](/sunk-cost-toolkit.jpg)
+
+*Four small tools for deciding whether to keep going*
+
+---
+
+## So, did I finish the book?
+
+No.
+
+I gave it to a friend who actually wanted to read it. It felt weirdly good. The book is being used now, which is more than it was doing on my table :)
+
+And I’m not feeling guilty about it anymore. The money’s gone either way. The hours are gone either way.
+
+Honestly, that’s the one thing I keep coming back to.
+
+**Time is the one thing that doesn’t come back.**
+
+Money can be earned again. A degree can be restarted. A project can be rebuilt. But the hours I spend on something I’d never choose today, those are gone for good.
+
+So maybe at 22 the goal isn’t to finish everything. Maybe it’s to be a bit more careful about what I give my time to. And to stay for the right reasons.
+
+Stop things on purpose. Continue things on purpose.
+
+Just never by accident.
+
+That’s it for now.
+
+Until next time! Rohith
